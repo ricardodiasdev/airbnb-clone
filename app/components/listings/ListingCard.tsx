@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import HeartButton from "../HeartButton";
 import useCountries from "@/app/hooks/useCountries";
 import { SafeUser, safeListings } from "@/app/types";
-import {  Reservation } from "@prisma/client";
+import { Reservation } from "@prisma/client";
 import { format } from "date-fns";
 import Image from "next/image";
 import Button from "../Button";
@@ -65,7 +65,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
   return (
     <div
-      onClick={() => router.push(`/listings`)}
+      onClick={() => router.push(`/listings/${data.id}`)}
       className="col-span-1 cursor-pointer group"
     >
       <div className="flex flex-col gap-2 w-full">
