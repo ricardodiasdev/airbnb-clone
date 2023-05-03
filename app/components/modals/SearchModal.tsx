@@ -2,7 +2,7 @@
 import { useCallback, useMemo, useState } from "react";
 import qs from "query-string";
 import CountrySelect, { CountrySelectValue } from "../inputs/CountrySelect";
-import useSearchModal from "@/app/hooks/useSearchModel";
+import useSearchModal from "@/app/hooks/useSearchModal";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Range } from "react-date-range";
 
